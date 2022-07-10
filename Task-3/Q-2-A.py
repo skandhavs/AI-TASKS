@@ -1,0 +1,10 @@
+import numpy as np
+np.random.seed(100) 
+a = np.random.uniform(1,50, 20)
+a=np.array(a,dtype=np.int32)
+print("The Array")
+print(a)
+print("The Updated Array")
+b=np.where(a<15,15,a)
+b=np.where(b>45,45,b)
+print(b)
